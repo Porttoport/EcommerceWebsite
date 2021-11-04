@@ -9,4 +9,4 @@ const express = require('express');
     require('./config/mongoose.config');
     require('./routes/routes.js')(app);
 
-    app.listen(8000, () => console.log("Now listening on port 8000"));
+    app.listen(3000, () => console.log("Now listening on port 3000"));
