@@ -1,9 +1,9 @@
-const ExamController = require("../controllers/controller");
+const ProductController = require("../controllers/controller");
 
 module.exports = (app) => {
-  app.get("/", ExamController.Indexs);
-  app.get("/pets/:id", ExamController.Show);
-  app.put("/edit/pets/:id", ExamController.Update);
-  app.post("/pets/new", ExamController.Create);
-  app.delete("/pets/delete/:id", ExamController.Delete);
+  app.get("/", ProductController.Indexs);
+  app.get("/:id", ProductController.Show);
+  app.put("/edit/:id", ProductController.Update);
+  app.post("/new", ProductController.Create);
+  app.delete("/delete/:id", ProductController.Delete);
 };
