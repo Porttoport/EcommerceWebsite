@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-    const ExamSchema = new mongoose.Schema({
+    const ProductSchema = new mongoose.Schema({
         name:{
             type:String,
             required:[true,"Name is required"], 
@@ -22,6 +22,6 @@ const mongoose = require('mongoose');
     }, 
     { timestamps: true });
 
-    const Exam = mongoose.model("Exam", ExamSchema);
+    const Product = mongoose.model("Products", ProductSchema);
 
-    module.exports = Exam;
+    module.exports = Product;
