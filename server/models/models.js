@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
         },
         price:{
             type:Number,
-            required:[true,"Type is required"]
+            required:[true,"Price is required"]
         },
         description:{
             type:String,
